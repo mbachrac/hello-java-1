@@ -6,35 +6,35 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestHelloWorld {
+public class HelloWorldTest {
 
-  private HelloWorld fixture;
+  private HelloWorld helloWorld;
 
   @Before
   public void setUp() throws Exception {
-    fixture = new HelloWorld();
+    helloWorld = new HelloWorld();
   }
 
   @After
   public void tearDown() throws Exception {
-    fixture = null;
+    helloWorld = null;
   }
 
   @Test
   public void getMessage() {
-    assertNotNull(fixture);
-    assertEquals("hello world", fixture.getMessage());
+    assertNotNull(helloWorld);
+    assertEquals("hello world", helloWorld.getMessage());
   }
 
   @Test
   public void getMessage2() { // this test is broken - fix it!
-    assertNull(fixture);
-    assertEquals("hello world", fixture.getMessage());
+    assertNull(helloWorld);
+    assertEquals("helo world", helloWorld.getMessage());
   }
 
   @Test
   public void getYear() { // this test is OK, fix HelloWorld.java to make it pass!
-    assertNotNull(fixture);
-    assertEquals(2019, fixture.getYear());
+    assertNotNull(helloWorld);
+    assertEquals(2019, helloWorld.getYear());
   }
 }
