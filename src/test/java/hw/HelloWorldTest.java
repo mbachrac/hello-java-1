@@ -28,8 +28,8 @@ public class HelloWorldTest {
 
   @Test
   public void getMessage2() { // this test is broken - fix it!
-    assertNull(helloWorld);
-    assertEquals("helo world", helloWorld.getMessage());
+    assertNotNull(helloWorld);
+    assertEquals("hello world", helloWorld.getMessage());
   }
 
   @Test
